@@ -2,8 +2,6 @@ import { fetchPlaceholders } from './placeholders.js';
 import { isAuthorEnvironment } from './scripts.js';
 
 export const PATH_PREFIX = '/language-masters';
-export const TAG_ROOT = 'wknd-universal:';
-// export const SITE_NAME = 'wknd-universal';
 export const SUPPORTED_LANGUAGES = ['en'];
 export const INTERNAL_PAGES = ['/footer', '/nav', '/fragments', '/data', '/drafts'];
 let lang;
@@ -12,8 +10,6 @@ let lang;
  * Extracts the site name from the current URL pathname
  * @description Extracts the site name from paths following the pattern /content/site-name/...
  * For example:
- * - From "/content/wknd-universal/language-masters/en/path" returns "wknd-universal"
- * -From "/content/wknd-universal/language-masters/en/path/to/content.html" returns "wknd-universal"
  * @returns {string} The site name extracted from the path, or empty string if not found
  */
 export async function getSiteName() {
@@ -39,7 +35,6 @@ export async function getSiteName() {
 /**
  * Get Inherited Page Properties
  * Considers pathnames like /en/path/to/content and
- * /content/wknd-universal/language-masters/en/path/to/content.html for both EDS and AEM
  */
 export function getInheritedPageProperties() {
   const { pathname } = window.location;
@@ -47,7 +42,6 @@ export function getInheritedPageProperties() {
   const parts = pathname.split('/');
   const safeLangGet = (index) => (parts.length > index ? parts[index] : 'en');
   /* 5 is the index of the language in the path for AEM content paths like
-     /content/wknd-universal/language-masters/en/path/to/content.html
      2 is the index of the language in the path for EDS paths like /en/path/to/content
     */
 
@@ -73,7 +67,6 @@ export function getInheritedPageProperties() {
 /**
  * Process current pathname and return details for use in language switching
  * Considers pathnames like /en/path/to/content and
- * /content/wknd-universal/language-masters/en/path/to/content.html for both EDS and AEM
  */
 export function getPathDetails() {
   const { pathname } = window.location;
@@ -81,7 +74,6 @@ export function getPathDetails() {
   const parts = pathname.split('/');
   const safeLangGet = (index) => (parts.length > index ? parts[index] : 'en');
   /* 5 is the index of the language in the path for AEM content paths like
-     /content/wknd-universal/language-masters/en/path/to/content.html
      2 is the index of the language in the path for EDS paths like /en/path/to/content
     */
   let langCode = isContentPath ? safeLangGet(3) : safeLangGet(0);
@@ -134,18 +126,6 @@ export function formatDate(dObjStr) {
     return formatted;
   }
   return '';
-}
-
-/**
- * Remove prefix from tag
- * @param {*} tag
- * @returns
- */
-export function processTags(tag, prefix = '') {
-  if (tag) {
-    return tag.replace(TAG_ROOT, '').replace(`${prefix}/`, '');
-  }
-  return null;
 }
 
 /**
