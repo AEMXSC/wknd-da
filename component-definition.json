@@ -74,7 +74,7 @@
           "id": "cards",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"cards\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
+              "unsafeHTML": "<div class=\"cards\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
             }
           },
           "model": "cards",
@@ -85,7 +85,7 @@
           "id": "card",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
+              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
             }
           },
           "model": "card"
