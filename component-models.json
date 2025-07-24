@@ -101,6 +101,13 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "div:nth-child(3)",
+        "valueType": "string",
+        "label": "Variant",
+        "multi": false
       }
     ]
   },
