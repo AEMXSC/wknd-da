@@ -111,6 +111,15 @@
           }
         },
         {
+          "title": "Dynamic Media Template",
+          "id": "dynamicmedia-template",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"dynamicmedia-template\"><div><div></div></div><div><div></div></div><div><div></div></div></div>"
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
