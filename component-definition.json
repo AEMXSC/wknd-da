@@ -115,7 +115,7 @@
           "id": "dynamicmedia-template",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"dynamicmedia-template\"><div><div></div></div><div><div></div></div><div><div></div></div></div>"
+              "unsafeHTML": "<div class=\"dynamicmedia-template\"><div><div></div></div><div><div><p><a href=\"\"></a></p></div></div><div><div><p></p></div></div></div>"
             }
           }
         },
@@ -172,6 +172,15 @@
           "plugins": {
             "da": {
               "unsafeHTML": "<div><div><p></p></div><div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Teaser",
+          "id": "teaser",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"teaser\"><div><p></p><div><p></p></div></div><div><p></p><div><p></p></div></div><div><p></p><div><p><a href=\"\"></a></p></div></div><div><p></p><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div></div><div><p></p><div><p></p></div></div><div><p></p><div><p></p></div></div></div>"
             }
           }
         },
