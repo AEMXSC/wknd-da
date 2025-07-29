@@ -180,7 +180,7 @@
           "id": "teaser",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"teaser\"><div><p></p><div><p></p></div></div><div><p></p><div><p></p></div></div><div><p></p><div><p><a href=\"\"></a></p></div></div><div><p></p><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div></div><div><p></p><div><p></p></div></div><div><p></p><div><p></p></div></div></div>"
+              "unsafeHTML": "<div class=\"teaser\"><div><p></p><div><p></p></div></div><div><p></p><div><p></p></div></div><div><p></p><div><p><a href=\"\"></a></p></div></div><div><p></p><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div></div><div><p></p><div><p></p></div></div><div><p></p><div><p><a href=\"\"></a></p></div></div></div>"
             }
           }
         },
